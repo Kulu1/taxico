@@ -1,7 +1,7 @@
 import { myNumberOtp } from './d-register';
 
 var myNumber = myNumberOtp()
-const client = require ('twilio')('AC0546a00fb39072af646c50f6f186d6ee', '471f68b1e3e8393d1ba675b34d799a86');
+const client = require ('twilio')('AC0546a00fb39072aferty646c50f6f186d6ee', '471f68b1e3e8393dasdefrt1ba675b34d799a86');
 
 export async function SendSms(){
     generateOTP()
