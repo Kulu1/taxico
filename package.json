@@ -1,0 +1,37 @@
+{
+    "name": "taxico",
+    "version": "1.0.0",
+    "description": "This is our AGILE module project, Hello, Taxico. It is a taxi hailing platform especially built for GCIT college community located in the remote woods of Kabjesa, Thimphu.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "type": "module"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/csf202_agile-software-engineering-practice/taxico.git"
+    },
+    "author": "Karma Wangchuk, Ngawang Gyeltshen, Rada Dorji, Tandin Pema Gyalmo, Kelden Namgyel Tshering",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/csf202_agile-software-engineering-practice/taxico/issues"
+    },
+    "homepage": "https://gitlab.com/csf202_agile-software-engineering-practice/taxico#readme",
+    "dependencies": {
+        "axios": "^1.5.1",
+        "bcryptjs": "^2.4.3",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "install": "^0.13.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^7.5.0",
+        "multer": "^1.4.5-lts.1",
+        "twilio": "^4.19.0",
+        "validator": "^13.11.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}

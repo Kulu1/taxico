@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxiCo</title>
+  <link rel="stylesheet" href="../css/register.css" />
+  <!-- <script src="./js/d-registrationForm.js"></script> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <section>
+    <div class="imgbx">
+      <img src="../img/taximg.jpg" alt="" />
+    </div>
+    <div class="contentbx">
+      <div class="formbx">
+        <h1>Wecome To Taxico</h1>
+        <h2>Register As Driver</h2>
+        <!-- notifi -->
+        <div class="box1">
+          <div class="btns">
+            <div id="confirmationModal" class="modal">
+              <div class="modal-content">
+              </div>
+            </div>
+  
+            <div id="confirmationPopup" class="popup">
+              <div class="popup-content">
+                <span id="popupMessage"></span>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- notifi -->
+        <form id="registrationForm">
+          <div class="inputbx">
+            <input type="text" placeholder="Full Name" id="fullName" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" placeholder="Phone Number" id="phoneNumber" />
+          </div>
+          <div class="inputbx">
+            <input type="text" placeholder="License" id="license" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div class="inputbx">
+            <div class="input-container">
+              <div class="sel">
+                <select name="cars" class="cars" id="vechicleType">
+                  <option value="" disabled selected>Vehicle Type</option>
+                  <option value="Manual car">Manual car</option>
+                  <option value="Electric car">Electric car</option>
+                  <option value="MPV">MPV</option>
+                  <option value="Mini Van">Mini Van</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="inputbx">
+            <div class="inputbx">
+              <input type="password" placeholder="Password" id="password" />
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="inputbx">
+              <input type="password" placeholder="Password" id="confirmPassword" />
+            </div>
+          </div>
+
+          <div class="inputbx">
+            <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+            <label for="termsCheckbox">Agree <a href="./../T-condition.html">terms and conditions</a> and <a
+                href="./../Privecy.html">Pivecy policy </a></label>
+          </div>
+          <div class="inputbx">
+            <input type="submit" id="signUp" value="sign up" />
+          </div>
+        </form>
+
+        <div class="inputbx">
+          <p>Already have an account?<a href="../driver/driver.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://media.twiliocdn.com/sdk/js/client/v1.22/twilio.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+  <script type="module" src="../js/d-register.js"></script>
+
+</body>
+
+</html>

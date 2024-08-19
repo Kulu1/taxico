@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffead2;
+  font-family: 'Poppins', sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+section .imgbx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+section .imgbx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(255deg,yellow,rgb(0, 0, 0));
+    z-index: 1;
+    mix-blend-mode:screen; */
+}
+section .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .contentbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+section .contentbx .formbx {
+  width: 50%;
+}
+
+section .contentbx .formbx h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  letter-spacing: 1px;
+}
+section .contentbx .formbx p{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  letter-spacing: 1px;
+}
+
+section .contentbx .formbx h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+section .contentbx .formbx .inputbx {
+  margin-bottom: 20px;
+}
+
+section .contentbx .formbx .inputbx input {
+  height: 45px;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 200;
+  border: 1px solid gainsboro;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: black;
+  background: white;
+  border-radius: 10px;
+}
+/* f button  */
+section .contentbx .formbx  .inputbx a input[type="button"] {
+  background: orange;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+section .contentbx .formbx  .inputbx a input[type="button"]:hover {
+  background: rgb(246, 198, 109);
+  color: black;
+}
+/* end  */
+
+section .contentbx .formbx .inputbx input[type="submit"] {
+  background: orange;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+section .contentbx .formbx .inputbx input[type="submit"]:hover {
+  background: rgb(246, 198, 109);
+  color: black;
+}
+
+section .contentbx .formbx .inputbx p {
+  margin-top: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+section .contentbx .formbx .inputbx p a {
+  color: orange;
+  font-size: 16px;
+  margin-left: 5px;
+}
+section .contentbx .formbx .Forget a {
+  color: orange;
+  font-size: 16px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+section .contentbx .formbx .inputbx label a{
+  color: orange;
+  font-size: 16px;
+}
+
+/* responsiveness */
+/* Original styles above */
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column-reverse;
+  }
+  section .imgbx {
+    width: 100%;
+    height: 40vh; /* Adjust the height as needed */
+  }
+  section .contentbx {
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+  }
+}
+
+@media (max-width: 530px) {
+  section .imgbx {
+    display: none;
+  }
+  section .contentbx {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  section .contentbx .formbx {
+    width: 80%;
+  }
+  section .contentbx .formbx h1,
+  section .contentbx .formbx h2,
+  section .contentbx .formbx p {
+    text-align: center;
+  }
+}
+/* eye icon thing  */
+/* Add CSS to position the eye icon inside the input box */
+.inputbx {
+  position: relative;
+}
+
+#password {
+  padding-right: 30px; /* Make space for the icon */
+}
+
+#password-icon {
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  right: 10px; /* Adjust the right position as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+

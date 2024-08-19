@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the login page </title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+  <body>
+    <section>
+      <div class="imgbx">
+        <img src="../img/taximg.jpg" alt="" />
+      </div>
+      <div class="contentbx">
+        <div class="formbx">
+          <h1>welcome Passenger</h1>
+          <h2>Login</h2>
+           <!-- notifi -->
+           <div class="btns">
+            <div id="confirmationModal" class="modal">
+             <div class="modal-content">
+             </div>
+         </div>
+ 
+         <div id="confirmationPopup" class="popup">
+             <div class="popup-content">
+                 <span id="popupMessage"></span>
+             </div>
+         </div>
+           </div>
+              <!-- notifi -->
+          <form id="passengerLoginPage">
+            <div class="inputbx">
+              <input id="contact" type="number" placeholder="Phone Number" />
+            </div>
+
+            <div class="inputbx">
+              <input type="password" placeholder="Password" id="password" />
+            </div>
+
+            <div class="inputbx">
+              <input type="submit" value="sign in " />
+                <p>Dont have an account?<a href="./P-register.html">Register</a></p>
+              
+            </div>
+
+            <div class="Forget">
+              <a href="./../F-pass.html">Forget Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="../js/p-login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+
+  </body>
+</html>
+ 

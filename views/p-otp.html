@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxiCo</title>
+    <link rel="stylesheet" href="./css/otp.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <script src="../otp.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="box-image box-col">
+        <img src="./img/taximg.jpg" alt="sideimage" />
+      </div>
+      <div class="box-col">
+        <div class="box-form">
+          <div class="inner">
+            <div class="form-head">
+              <div class="title" style="text-align: center">
+                Welcome To Taxico
+              </div>
+              <div
+                class="title"
+                style="font-size: 24; text-align: center; padding: 20px"
+              >
+                Register As Driver
+              </div>
+              <div
+                class="title-1"
+                style="font-size: 14; text-align: center; padding: 15px"
+              >
+                We have sent the OTP verification code to your phone number.
+                Check your inbox and enter the code below.
+              </div>
+               <!-- notifi -->
+          <div class="btns">
+            <div id="confirmationModal" class="modal">
+             <div class="modal-content">
+             </div>
+         </div>
+ 
+         <div id="confirmationPopup" class="popup">
+             <div class="popup-content">
+                 <span id="popupMessage"></span>
+             </div>
+         </div>
+           </div>
+              <!-- notifi -->
+
+              <div class="container">
+                <form action="#" id="otp">
+                  <div class="input-field">
+                    <input type="string" id="num1"/>
+                    <input type="string" id="num2"/>
+                    <input type="string" id="num3"/>
+                    <input type="string" id="num4"/>
+                  </div>
+              </div>
+              <div class="bottom-register">
+                Didn't receive code?
+                <a href="#" class="link">click here to resend</a>
+              </div>
+              <div class="actions"> 
+                <button  id="otpConfirmButton" class="btn btn-submit">CONFIRM</button>
+              </div>
+             </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script type="module" src="./js/p-phoneAuth.js"></script>    
+  </body>
+</html>

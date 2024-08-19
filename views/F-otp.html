@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxiCo</title>
+    <link rel="stylesheet" href="./css/otp.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <script src="./js/otp.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="box-image box-col">
+        <img src="./img/taximg.jpg" alt="sideimage" />
+      </div>
+      <div class="box-col">
+        <div class="box-form">
+          <div class="inner">
+            <div class="form-head">
+              <div class="title" style="text-align: center">Please verify</div>
+              <div
+                class="title-1"
+                style="font-size: 14; text-align: center; padding: 15px"
+              >
+                We have sent the OTP verification code to your phone number.
+                Check your inbox and enter the code below.
+              </div>
+
+              <div class="container">
+                <form action="#" id="otp">
+                  <div class="input-field">
+                    <input type="string" id="num1"/>
+                    <input type="string" id="num2"/>
+                    <input type="string" id="num3"/>
+                    <input type="string" id="num4"/>
+                  </div>
+                </form>
+              </div>
+
+              <div class="bottom-register">
+                Didn't receive code?
+                <a href="#" class="link">Resend</a>
+              </div>
+
+              <div class="actions">
+                <button id="otpConfirmButton" class="btn btn-submit">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/forgotPassword1.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+
+
+  </body>
+</html>
